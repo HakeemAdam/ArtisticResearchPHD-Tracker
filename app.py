@@ -19,10 +19,11 @@ my_results_list = []
 def searchGoogle(query):
     """
     Using the google search API for search and pandas to save the output as csv
-    :param query: search query
-    :type query: str
-    ...
-    :return: none
+
+        :param query: search query
+        :type query: str
+
+        :return: none
     """
     for i in search(query, tld='com', lang='en', num=10, start=0, stop=None, pause=2.0, ):
         my_results_list.append(i)
